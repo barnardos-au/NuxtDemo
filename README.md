@@ -2,9 +2,9 @@
 Demonstration of Nuxt.js capabilities
 
 ## How-to create project
-``` powershell
-C:\code\barnardos\NuxtDemo> cd src
-C:\code\barnardos\NuxtDemo\src> npx create-nuxt-app nuxtdemo
+```
+cd src
+npx create-nuxt-app nuxtdemo
 ```
 
 Specify the following options:
