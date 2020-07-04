@@ -16,7 +16,16 @@
     "@nuxtjs/axios": "^5.11.0",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
-    "nuxt": "^2.13.0"
+    "chart.js": "^2.9.3",
+    "core-js": "^3.6.5",
+    "flatpickr": "^4.6.3",
+    "nouislider": "^14.6.0",
+    "nuxt": "^2.13.0",
+    "register-service-worker": "^1.7.1",
+    "vue-chartjs": "^3.5.0",
+    "vue-clipboard2": "^0.3.1",
+    "vue-flatpickr-component": "^8.1.5",
+    "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",
@@ -30,7 +39,9 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.0.1",
+    "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
+    "sass-loader": "^9.0.1",
     "vue-jest": "^3.0.4"
   }
 }
