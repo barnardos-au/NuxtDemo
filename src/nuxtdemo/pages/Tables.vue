@@ -303,12 +303,6 @@
                 </td>
                 <td>On the Road</td>
                 <td class="text-right">$25 224.2</td>
-                <td class="text-center">
-                  <Sparklines
-                    :data="getRandomData()"
-                    :options="getRandomColor()"
-                  ></Sparklines>
-                </td>
               </tr>
               <tr>
                 <td>
@@ -324,12 +318,6 @@
                 </td>
                 <td>HP Core i7</td>
                 <td class="text-right">$87 346.1</td>
-                <td class="text-center">
-                  <Sparklines
-                    :data="getRandomData()"
-                    :options="getRandomColor()"
-                  ></Sparklines>
-                </td>
               </tr>
               <tr>
                 <td>
@@ -345,12 +333,6 @@
                 </td>
                 <td>Let&apos;s Dance</td>
                 <td class="text-right">$57 944.6</td>
-                <td class="text-center">
-                  <Sparklines
-                    :data="getRandomData()"
-                    :options="getRandomColor()"
-                  ></Sparklines>
-                </td>
               </tr>
               <tr>
                 <td>
@@ -366,12 +348,6 @@
                 </td>
                 <td>Air Pro</td>
                 <td class="text-right">$118 533.1</td>
-                <td class="text-center">
-                  <Sparklines
-                    :data="getRandomData()"
-                    :options="getRandomColor()"
-                  ></Sparklines>
-                </td>
               </tr>
               <tr>
                 <td>
@@ -387,12 +363,6 @@
                 </td>
                 <td>Version Control</td>
                 <td class="text-right">$72 854.5</td>
-                <td class="text-center">
-                  <Sparklines
-                    :data="getRandomData()"
-                    :options="getRandomColor()"
-                  ></Sparklines>
-                </td>
               </tr>
             </tbody>
           </table>
@@ -446,12 +416,6 @@
                   </td>
                   <td>On the Road</td>
                   <td class="text-right">$25 224.2</td>
-                  <td class="text-center">
-                    <Sparklines
-                      :data="getRandomData()"
-                      :options="getRandomColor()"
-                    ></Sparklines>
-                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -469,12 +433,6 @@
                   </td>
                   <td>HP Core i7</td>
                   <td class="text-right">$87 346.1</td>
-                  <td class="text-center">
-                    <Sparklines
-                      :data="getRandomData()"
-                      :options="getRandomColor()"
-                    ></Sparklines>
-                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -492,12 +450,6 @@
                   </td>
                   <td>Let&apos;s Dance</td>
                   <td class="text-right">$57 944.6</td>
-                  <td class="text-center">
-                    <Sparklines
-                      :data="getRandomData()"
-                      :options="getRandomColor()"
-                    ></Sparklines>
-                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -515,12 +467,6 @@
                   </td>
                   <td>Air Pro</td>
                   <td class="text-right">$118 533.1</td>
-                  <td class="text-center">
-                    <Sparklines
-                      :data="getRandomData()"
-                      :options="getRandomColor()"
-                    ></Sparklines>
-                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -538,12 +484,6 @@
                   </td>
                   <td>Version Control</td>
                   <td class="text-right">$72 854.5</td>
-                  <td class="text-center">
-                    <Sparklines
-                      :data="getRandomData()"
-                      :options="getRandomColor()"
-                    ></Sparklines>
-                  </td>
                 </tr>
               </tbody>
             </table>
@@ -556,12 +496,11 @@
 
 <script>
 import Vue from 'vue'
-import Sparklines from '@/components/Sparklines/Sparklines'
 import Widget from '@/components/Widget/Widget'
 
 export default {
   name: 'Tables',
-  components: { Widget, Sparklines },
+  components: { Widget },
   data() {
     return {
       tableStyles: [

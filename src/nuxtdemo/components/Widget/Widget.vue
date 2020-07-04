@@ -15,7 +15,7 @@
     >
       {{ title }}
     </h5>
-    <header v-if="title && customHeader" class="title" v-html="title"></header>
+    <header v-if="title && customHeader" class="title"></header>
     <div
       v-if="!customControls && mainControls"
       class="widgetControls widget-controls"
@@ -120,7 +120,6 @@
       v-if="customControls"
       ref="customControlsRef"
       class="widgetControls widget-controls"
-      v-html="customControls"
     ></div>
     <div
       ref="widgetBodyRef"
@@ -145,7 +144,7 @@ export default {
   components: { Loader },
   props: {
     customHeader: { type: Boolean, default: false },
-    tooltipPlacement: { default: 'top' },
+    tooltipPlacement: { type: String, default: 'top' },
     showTooltip: { type: Boolean, default: false },
     close: { type: [Boolean, String], default: false },
     fullscreen: { type: [Boolean, String], default: false },
@@ -153,11 +152,11 @@ export default {
     settings: { type: [Boolean, String], default: false },
     settingsInverse: { type: Boolean, default: false },
     refresh: { type: [Boolean, String], default: false },
-    className: { default: '' },
-    title: { default: '' },
-    customControls: { default: null },
-    bodyClass: { default: '' },
-    options: { default: () => ({}) },
+    className: { type: String, default: '' },
+    title: { type: String, default: '' },
+    customControls: { type: String, default: null },
+    bodyClass: { type: String, default: '' },
+    options: { type: Object, default: () => ({}) },
     fetchingData: { type: Boolean, default: false },
     showLoader: { type: Boolean, default: true },
     collapsed: { type: Boolean, default: false },
