@@ -11,7 +11,7 @@
           <sidebar-item
             :link="{
               name: 'Dashboard',
-              icon: 'ni ni-tv-2 text-primary',
+              icon: 'fa fa-home text-primary',
               path: '/',
             }"
           />
