@@ -9,13 +9,13 @@
           <div class="btn-wrapper text-center">
             <a href="#" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"
-                ><img src="img/icons/common/github.svg"
+                ><img src="@/assets/img/icons/common/github.svg"
               /></span>
               <span class="btn-inner--text">Github</span>
             </a>
             <a href="#" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"
-                ><img src="img/icons/common/google.svg"
+                ><img src="@/assets/img/icons/common/google.svg"
               /></span>
               <span class="btn-inner--text">Google</span>
             </a>
@@ -32,7 +32,6 @@
               placeholder="Name"
               addon-left-icon="ni ni-hat-3"
             >
-              >
             </base-input>
 
             <base-input
@@ -41,7 +40,6 @@
               placeholder="Email"
               addon-left-icon="ni ni-email-83"
             >
-              >
             </base-input>
 
             <base-input
@@ -51,7 +49,6 @@
               type="password"
               addon-left-icon="ni ni-lock-circle-open"
             >
-              >
             </base-input>
 
             <div class="text-muted font-italic">
@@ -85,9 +82,9 @@
           </a>
         </div>
         <div class="col-6 text-right">
-          <router-link to="/login" class="text-light">
+          <nuxt-link to="/login" class="text-light">
             <small>Login into your account</small>
-          </router-link>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -96,6 +93,7 @@
 <script>
 export default {
   name: 'Register',
+  layout: 'AuthLayout',
   data() {
     return {
       model: {

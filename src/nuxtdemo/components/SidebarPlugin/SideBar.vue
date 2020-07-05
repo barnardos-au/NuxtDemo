@@ -8,9 +8,13 @@
       <navbar-toggle-button @click.native="showSidebar">
         <span class="navbar-toggler-icon"></span>
       </navbar-toggle-button>
-      <router-link class="navbar-brand" to="/">
-        <img :src="logo" class="navbar-brand-img" alt="..." />
-      </router-link>
+      <nuxt-link class="navbar-brand" to="/">
+        <img
+          src="@/assets/img/brand/green.png"
+          class="navbar-brand-img"
+          alt="..."
+        />
+      </nuxt-link>
 
       <slot name="mobile-right">
         <ul class="nav align-items-center d-md-none">
@@ -38,7 +42,7 @@
                 <span class="avatar avatar-sm rounded-circle">
                   <img
                     alt="Image placeholder"
-                    src="img/theme/team-1-800x800.jpg"
+                    src="@/assets/img/theme/team-1-800x800.jpg"
                   />
                 </span>
               </div>
@@ -47,22 +51,22 @@
             <div class="dropdown-header noti-title">
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
-            <router-link to="/profile" class="dropdown-item">
+            <nuxt-link to="/UserProfile" class="dropdown-item">
               <i class="ni ni-single-02"></i>
               <span>My profile</span>
-            </router-link>
-            <router-link to="/profile" class="dropdown-item">
+            </nuxt-link>
+            <nuxt-link to="/UserProfile" class="dropdown-item">
               <i class="ni ni-settings-gear-65"></i>
               <span>Settings</span>
-            </router-link>
-            <router-link to="/profile" class="dropdown-item">
+            </nuxt-link>
+            <nuxt-link to="/UserProfile" class="dropdown-item">
               <i class="ni ni-calendar-grid-58"></i>
               <span>Activity</span>
-            </router-link>
-            <router-link to="/profile" class="dropdown-item">
+            </nuxt-link>
+            <nuxt-link to="/UserProfile" class="dropdown-item">
               <i class="ni ni-support-16"></i>
               <span>Support</span>
-            </router-link>
+            </nuxt-link>
             <div class="dropdown-divider"></div>
             <a href="#!" class="dropdown-item">
               <i class="ni ni-user-run"></i>
@@ -80,9 +84,9 @@
         <div class="navbar-collapse-header d-md-none">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <router-link to="/">
-                <img :src="logo" />
-              </router-link>
+              <nuxt-link to="/">
+                <img src="@/assets/img/brand/green.png" />
+              </nuxt-link>
             </div>
             <div class="col-6 collapse-close">
               <navbar-toggle-button
@@ -139,11 +143,6 @@ export default {
     NavbarToggleButton,
   },
   props: {
-    logo: {
-      type: String,
-      default: 'img/brand/green.png',
-      description: 'Sidebar app logo',
-    },
     autoClose: {
       type: Boolean,
       default: true,

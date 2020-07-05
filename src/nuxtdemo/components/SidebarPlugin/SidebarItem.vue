@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item">
-    <router-link
+    <nuxt-link
       :to="link.path"
       class="nav-link"
       :target="link.target"
@@ -11,7 +11,7 @@
         <i :class="link.icon"></i>
         <span class="nav-link-text">{{ link.name }}</span>
       </template>
-    </router-link>
+    </nuxt-link>
   </li>
 </template>
 <script>

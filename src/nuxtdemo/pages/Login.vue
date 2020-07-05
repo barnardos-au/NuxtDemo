@@ -9,13 +9,13 @@
           <div class="btn-wrapper text-center">
             <a href="#" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"
-                ><img src="img/icons/common/github.svg"
+                ><img src="@/assets/img/icons/common/github.svg"
               /></span>
               <span class="btn-inner--text">Github</span>
             </a>
             <a href="#" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"
-                ><img src="img/icons/common/google.svg"
+                ><img src="@/assets/img/icons/common/google.svg"
               /></span>
               <span class="btn-inner--text">Google</span>
             </a>
@@ -32,7 +32,6 @@
               placeholder="Email"
               addon-left-icon="ni ni-email-83"
             >
-              >
             </base-input>
 
             <base-input
@@ -42,7 +41,6 @@
               type="password"
               addon-left-icon="ni ni-lock-circle-open"
             >
-              >
             </base-input>
 
             <base-checkbox class="custom-control-alternative">
@@ -59,8 +57,8 @@
           <a href="#" class="text-light"><small>Forgot password?</small></a>
         </div>
         <div class="col-6 text-right">
-          <router-link to="/register" class="text-light"
-            ><small>Create new account</small></router-link
+          <nuxt-link to="/register" class="text-light"
+            ><small>Create new account</small></nuxt-link
           >
         </div>
       </div>
@@ -70,6 +68,7 @@
 <script>
 export default {
   name: 'Login',
+  layout: 'AuthLayout',
   data() {
     return {
       model: {

@@ -63,7 +63,7 @@
               >
                 <img
                   alt="Image placeholder"
-                  src="img/theme/team-1-800x800.jpg"
+                  src="@/assets/img/theme/team-1-800x800.jpg"
                 />
               </a>
               <a
@@ -74,7 +74,7 @@
               >
                 <img
                   alt="Image placeholder"
-                  src="img/theme/team-2-800x800.jpg"
+                  src="@/assets/img/theme/team-2-800x800.jpg"
                 />
               </a>
               <a
@@ -85,7 +85,7 @@
               >
                 <img
                   alt="Image placeholder"
-                  src="img/theme/team-3-800x800.jpg"
+                  src="@/assets/img/theme/team-3-800x800.jpg"
                 />
               </a>
               <a
@@ -96,7 +96,7 @@
               >
                 <img
                   alt="Image placeholder"
-                  src="img/theme/team-4-800x800.jpg"
+                  src="@/assets/img/theme/team-4-800x800.jpg"
                 />
               </a>
             </div>
@@ -165,7 +165,7 @@ export default {
     return {
       tableData: [
         {
-          img: 'img/theme/bootstrap.jpg',
+          img: this.getThemeImage('bootstrap'),
           title: 'Argon Design System',
           budget: '$2500 USD',
           status: 'pending',
@@ -173,7 +173,7 @@ export default {
           completion: 60,
         },
         {
-          img: 'img/theme/angular.jpg',
+          img: this.getThemeImage('angular'),
           title: 'Angular Now UI Kit PRO',
           budget: '$1800 USD',
           status: 'completed',
@@ -181,7 +181,7 @@ export default {
           completion: 100,
         },
         {
-          img: 'img/theme/sketch.jpg',
+          img: this.getThemeImage('sketch'),
           title: 'Black Dashboard',
           budget: '$3150 USD',
           status: 'delayed',
@@ -189,7 +189,7 @@ export default {
           completion: 72,
         },
         {
-          img: 'img/theme/react.jpg',
+          img: this.getThemeImage('react'),
           title: 'React Material Dashboard',
           budget: '$4400 USD',
           status: 'on schedule',
@@ -197,7 +197,7 @@ export default {
           completion: 90,
         },
         {
-          img: 'img/theme/vue.jpg',
+          img: this.getThemeImage('vue'),
           title: 'Vue Paper UI Kit PRO',
           budget: '$2200 USD',
           status: 'completed',
@@ -206,6 +206,11 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    getThemeImage(imgName) {
+      return require(`@/assets/img/theme/${imgName}.jpg`)
+    },
   },
 }
 </script>

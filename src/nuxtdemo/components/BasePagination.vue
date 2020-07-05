@@ -44,8 +44,8 @@ export default {
         'Pagination per page. Should be specified with total or pageCount',
     },
     total: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
       description:
         'Can be specified instead of pageCount. The page count in this case will be total/perPage',
     },

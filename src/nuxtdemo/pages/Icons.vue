@@ -84,11 +84,8 @@
                   :key="icon.name + index"
                   class="col-lg-3 col-md-6"
                 >
-                  >
                   <button
                     v-b-tooltip.hover.top
-                    v-clipboard:copy="icon.name"
-                    v-clipboard:success="onCopy"
                     type="button"
                     :title="icon.name"
                     class="btn-icon-clipboard"
@@ -109,9 +106,6 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import VueClipboard from 'vue-clipboard2'
-Vue.use(VueClipboard)
 export default {
   data() {
     return {

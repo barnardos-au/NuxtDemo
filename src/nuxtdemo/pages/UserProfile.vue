@@ -4,10 +4,12 @@
       class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
       style="
         min-height: 600px;
-        background-image: url(img/theme/profile-cover.jpg);
         background-size: cover;
         background-position: center top;
       "
+      :style="{
+        'background-image': coverImage,
+      }"
     >
       <!-- Mask -->
       <span class="mask bg-gradient-success opacity-8"></span>
@@ -35,7 +37,7 @@
                 <div class="card-profile-image">
                   <a href="#">
                     <img
-                      src="img/theme/team-4-800x800.jpg"
+                      src="@/assets/img/theme/team-4-800x800.jpg"
                       class="rounded-circle"
                     />
                   </a>
@@ -246,6 +248,12 @@ export default {
         about: '',
       },
     }
+  },
+  computed: {
+    coverImage() {
+      const image = require('@/assets/img/theme/profile-cover.jpg')
+      return `url(${image})`
+    },
   },
 }
 </script>
