@@ -19,7 +19,7 @@
           <sidebar-item
             :link="{
               name: 'Icons',
-              icon: 'ni ni-planet text-blue',
+              icon: 'ni ni-planet text-red',
               path: '/Icons',
             }"
           />
